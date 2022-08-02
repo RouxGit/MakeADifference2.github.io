@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+  <meta name='description' content='Helping brands thrive in the digital world. Located in The Argentina. Delivering tailor-made digital designs and building interactive websites from scratch. © RouxStudios'>
+
+  <!-- ===== ===== CSS ===== ===== -->
+
+  <link rel='stylesheet' href='Assets/CSS/style.css'>
+
+  <link rel='stylesheet' href='Assets/CSS/header.css'>
+
+  <!-- ===== ===== JavaScript ===== ===== -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js'></script>
+
+  <title>RouxStudios</title>
+
+</head>
+
+<body>
+
+  <main class='main__container' id='main'>
+
+    <div class='site__logo'>RouxStudios</div>
+
+    <nav class='navigation'>
+
+      <div class='site__info'>Make A Difference</div>
+
+      <ul class='menu'>
+
+        <li class='link'>Projects</li>
+        <li class='link'>About</li>
+        <li class='link'>Contact</li>
+
+      </ul>
+
+    </nav>
+  
+    <header class='header__section'>
+
+      <div class='header'>
+
+        <span>0</span>
+        <span>0</span>
+        <span>8</span>
+
+      </div>
+
+    </header>
+  
+    <footer class='footer'>
+
+      <span>Raising Reality <u>Home</u></span>
+      <div class='footer__wrapper'></div>
+
+    </footer>
+
+  </main>
+
+  <script>
+
+    gsap.from('.navigation > nav', 1.6, { opacity: 0, y: 60, ease: Expo.easeInOut, delay: 2.4, } );
+
+    gsap.from('.site__logo', 1.6, { opacity: 0, y: 40, ease: Expo.easeInOut, delay: 2.4, } ) ;
+
+    gsap.from(".header > span", 1.5, { top: '-100vh', ease: 'bounce.out', delay: 1, stagger: 0.2, } );
+
+    gsap.to('.footer span', 0.4, { y: -40, ease: Expo.easeInOut, delay: 2.4, } );
+
+  </script>
+
+</body>
+
+</html>
